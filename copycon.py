@@ -1,3 +1,5 @@
+# Copy copy_packname to packname
+
 import telebot
 import json
 from PIL import Image
