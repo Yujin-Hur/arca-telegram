@@ -1,0 +1,44 @@
+2022-07-20 17:27:55,802 (__init__.py:660 MainThread) ERROR - TeleBot: "Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: STICKERSET_INVALID"
+2022-07-20 17:27:55,802 (__init__.py:662 MainThread) ERROR - TeleBot: "Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\yjheo\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\__init__.py", line 651, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\yjheo\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\yjheo\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\yjheo\Desktop\yjheo\03_Personal\auto-imoji\test.py", line 78, in getstik
+    bot.add_sticker_to_set(message.chat.id, '<stickerpackname>_by_<botname>bot', emoji, fID)
+  File "C:\Users\yjheo\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\__init__.py", line 2816, in add_sticker_to_set
+    return apihelper.add_sticker_to_set(
+  File "C:\Users\yjheo\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\apihelper.py", line 1606, in add_sticker_to_set
+    return _make_request(token, method_url, params=payload, files=files, method='post')
+  File "C:\Users\yjheo\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\apihelper.py", line 152, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\yjheo\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\apihelper.py", line 179, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: STICKERSET_INVALID
+
+
+
+Traceback (most recent call last):
+  File "C:\Users\yjheo\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\__init__.py", line 651, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\yjheo\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\yjheo\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\yjheo\Desktop\yjheo\03_Personal\auto-imoji\test.py", line 77, in getstik
+    bot.add_sticker_to_set(USERID, '<stickerpackname>_by_<botname>bot', fID, emoji)
+  File "C:\Users\yjheo\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\__init__.py", line 2816, in add_sticker_to_set
+    return apihelper.add_sticker_to_set(
+  File "C:\Users\yjheo\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\apihelper.py", line 1606, in add_sticker_to_set
+    return _make_request(token, method_url, params=payload, files=files, method='post')
+  File "C:\Users\yjheo\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\apihelper.py", line 152, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\yjheo\AppData\Local\Programs\Python\Python310\lib\site-packages\telebot\apihelper.py", line 179, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: wrong remote file identifier specified: Wrong character in the string
+"
+2022-07-20 17:27:12,111 (__init__.py:580 MainThread) ERROR - TeleBot: "Infinity polling: polling exited"
+2022-07-20 17:27:12,111 (__init__.py:582 MainThread) ERROR - TeleBot: "Break infinity polling"
