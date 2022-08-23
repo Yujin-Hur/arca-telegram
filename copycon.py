@@ -5,11 +5,11 @@ import json
 from PIL import Image
 import os
 
-USERID = "1686862883"
-bot = telebot.TeleBot(token="1942776248:AAFlJ1Nvc4NNhnlSKXafZQEvMgayR-4n7VE")
-name = 'loveGenshin'
+USERID = "00000000"
+bot = telebot.TeleBot(token="00000000")
+name = 'asdf'
 packname = name +'_by_hyoling_bot'
-copy_packname = "hyoyuseopjin"
+copy_packname = "asdf"
 
 
 @bot.message_handler(commands=['start'])
