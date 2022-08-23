@@ -4,8 +4,8 @@ from PIL import Image
 import os
 import time
 
-USERID = "1686862883"
-bot = telebot.TeleBot(token="1942776248:AAFlJ1Nvc4NNhnlSKXafZQEvMgayR-4n7VE")
+USERID = "000000"
+bot = telebot.TeleBot(token="00000")
 name = 'loveGenshin'
 packname = name +'_by_hyoling_bot'
  
